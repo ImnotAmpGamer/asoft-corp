@@ -1,16 +1,19 @@
 <html>
 <head>
   <title>ASoft Corp. - Log into your account</title>
+  <script src="userLoginValidation.js"></script>
 </head>
 <body>
-<img src="Files/asoft-corp_logo.png" width="200" height="110">
-<h1>ASoft Corporation</h1>
-<h4 style="color:red;">Seemless software solutions...</h4>
-<h4 style="color:red;">For all your games!</h4>
+<img src="Files/asoft-corp_logo.png" width="200" height="250">
 <hr>
 <center>
 <h2>Welcome, user.</h2>
 <h4>Please log into your account in order to gain full access to our website</h4>
+<form name="userLogin" action="Files/Home.html" onsubmit="return userLoginValidation()" method="get">
+<h4>Username : <input type="text" name="username"></h4>
+<h4>Password : <input type="password" name ="password"></h4>
+<input type="button" onClick="(userLoginValidation(this.form))" value="Log in">
+</form>
 </center>
 </body>
 </html>
