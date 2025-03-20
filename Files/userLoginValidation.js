@@ -12,3 +12,4 @@ function userLoginValidation(form) {
             else {
                 form.submit();
             }
+}
